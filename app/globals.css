@@ -16,12 +16,66 @@
   }
 }
 
+.Containers {
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  transform: translateX(-15px)
+}
+
+.hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 0, 0, 0.391)), url("../public/homepage-j7.jpg");
+  width: 100%;
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homeImageWrp {
+  position: relative;
+}
+
+.homeImage {
+  height: 300px;
+  width: 100%;
+}
+
+@media (max-width:550px) {
+  .homeImage {
+    height: 210px;
+  }
+}
+
+.afternabefour {
+  position: absolute;
+  top: 50%;
+}
+
+.mm {
+  position: relative;
+}
+
+.left {
+  left: 0;
+  transform: translateX(10px);
+}
+
+.right {
+  right: 0;
+  transform: translateX(-10px);
+}
+
+.controller {
+  position: absolute;
+  z-index: 100;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
